@@ -107,12 +107,12 @@ app.get("/events/:eventId", async (req, res) => {
 });
 
 
-const PORT= process.env.PORT;
-app.listen(PORT, ()=>{
-    console.log(`Server is runing on ${PORT}`);
-});
+// const PORT= process.env.PORT;
+// app.listen(PORT, ()=>{
+//     console.log(`Server is runing on ${PORT}`);
+// });
 
-
+module.exports = app;
 
 
 
