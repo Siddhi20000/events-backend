@@ -14,7 +14,7 @@ app.use(express.json());
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "https://events-frontend-three-tau.vercel.app/", // only allow your frontend
+  origin: "https://events-frontend-fawn.vercel.app/", // only allow your frontend
   credentials: true,
 };
 
