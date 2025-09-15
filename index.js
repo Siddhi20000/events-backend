@@ -2,23 +2,23 @@ const express= require("express");
 const app= express();
 
 app.use(express.json());
-// const cors= require("cors");
+const cors= require("cors");
 
-// const corsOptions={
-//     origin: "*",
-//     credentials: true,
-// }
+const corsOptions={
+    origin: "*",
+    credentials: true,
+}
 
-// app.use(cors(corsOptions)); // Allow all origins (simple fix) 
+app.use(cors(corsOptions)); // Allow all origins (simple fix) 
 
-const cors = require("cors");
+// const cors = require("cors");
 
-const corsOptions = {
-  origin: "https://events-frontend-fawn.vercel.app/", // only allow your frontend
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: "https://events-frontend-fawn.vercel.app/", // only allow your frontend 
+//   credentials: true,
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 const {initializeDatabase}= require("./db/db.connect");
 const Event= require("./models/event.models");
